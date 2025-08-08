@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Construction - Building Your Dreams</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="logo.jpg" alt="Crown Construction" class="h-12 w-auto">
+                    <span class="ml-3 text-2xl font-bold text-gray-800">Crown Construction</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-blue-600 font-semibold">Home</a>
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600 transition">Services</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                    <a href="mailto:crowncon.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-blue-600 font-semibold">Home</a>
+                <a href="services.html" class="block py-2 text-gray-600">Services</a>
+                <a href="about.html" class="block py-2 text-gray-600">About</a>
+                <a href="mailto:crowncon.com" class="block py-2 text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-blue-700">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Building Your Dreams</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Professional construction services with 15+ years of experience. Quality, reliability, and excellence in every project.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="services.html" class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">Our Services</a>
+                <a href="mailto:crowncon.com" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-900 transition">Get Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive construction services to bring your vision to life</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-hammer text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Brick Laying</h3>
+                    <p class="text-gray-600">Professional brick laying services for residential and commercial projects.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tint text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Plumbing</h3>
+                    <p class="text-gray-600">Expert plumbing installation and repair services.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-saw text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Carpentry</h3>
+                    <p class="text-gray-600">Custom woodwork and carpentry solutions.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Electrical Services</h3>
+                    <p class="text-gray-600">Safe and reliable electrical installations.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tree text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Landscaping</h3>
+                    <p class="text-gray-600">Beautiful outdoor spaces and garden design.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-paint-roller text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Painting</h3>
+                    <p class="text-gray-600">Professional interior and exterior painting services.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="services.html" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="py-20 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our Achievements</h2>
+                <p class="text-xl opacity-90">Trusted by clients for over 15 years</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-blue-300 mb-2" data-counter="150">0</div>
+                    <p class="text-xl">Houses Built</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-blue-300 mb-2" data-counter="98">0</div>
+                    <p class="text-xl">Satisfaction Rate (%)</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-blue-300 mb-2" data-counter="200">0</div>
+                    <p class="text-xl">Referrals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Meet Our Team</h2>
+                <p class="text-xl text-gray-600">The experts behind our success</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- CEO -->
+                <div class="text-center">
+                    <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
+                        <img src="logo.jpg" alt="Tendai Chikare" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Tendai Chikare</h3>
+                    <p class="text-blue-600 font-semibold mb-2">CEO & Owner ("King Sign")</p>
+                    <p class="text-gray-600 mb-4">15+ Years of Experience</p>
+                    <p class="text-gray-600 max-w-md mx-auto">Leading the company with vision and expertise, ensuring every project meets the highest standards of quality and craftsmanship.</p>
+                </div>
+                <!-- Developer -->
+                <div class="text-center">
+                    <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
+                        <img src="lenny.jpg" alt="Leanmore Fore" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Leanmore Fore</h3>
+                    <p class="text-blue-600 font-semibold mb-2">Lead Developer</p>
+                    <p class="text-gray-600 mb-4">BSC Degree in Computer Science</p>
+                    <div class="flex flex-wrap justify-center gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Machine Learning & AI</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Web Development</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Mobile Development</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Networking</span>
+                    </div>
+                    <p class="text-gray-600 max-w-md mx-auto">Expert in modern web technologies and digital solutions for construction management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Ready to Start Your Project?</h2>
+                <p class="text-xl text-gray-600">Available 24/7 for your construction needs</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-blue-600 mr-3"></i>
+                            <a href="mailto:crowncon.com" class="text-gray-600 hover:text-blue-600">crowncon.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-600 mr-3"></i>
+                            <a href="tel:+263773147675" class="text-gray-600 hover:text-blue-600">+263 77 314 7675</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-blue-600 mr-3"></i>
+                            <span class="text-gray-600">Available 24/7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Get a Free Quote</h3>
+                    <p class="text-gray-600 mb-4">Tell us about your project and we'll provide you with a detailed quote.</p>
+                    <a href="mailto:crowncon.com" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition inline-block">Request Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Crown Construction</h3>
+                    <p class="text-gray-300">Building your dreams with quality and excellence since 2009.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Brick Laying</li>
+                        <li>Plumbing</li>
+                        <li>Carpentry</li>
+                        <li>Electrical Services</li>
+                        <li>Landscaping</li>
+                        <li>Painting</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="mailto:crowncon.com" class="hover:text-blue-400">crowncon.com</a></li>
+                        <li><a href="tel:+263773147675" class="hover:text-blue-400">+263 77 314 7675</a></li>
+                        <li>Available 24/7</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Crown Construction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
